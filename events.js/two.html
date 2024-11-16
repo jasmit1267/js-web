@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hey hello</h1>
+    <button class="stop">stop</button>
+</body>
+<script>
+    // const sayjai = function(){
+    //     console.log("jai");
+    // }
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = 'hello jai'
+        }
+
+        const changeMe = setTimeout(changeText,1000)
+        
+        
+        document.querySelector('.stop').addEventListener('click',function(){
+            clearTimeout(changeMe)
+            console.log('stop');
+            
+        })
+
+
+    // setTimeout(function(){
+    //     console.log("jai");
+    // },1000)
+</script>
+</html>
+
+<!--ASYNC CODE_----
+
+Blocking code VS Non-Blocking code
+    sync and async-->

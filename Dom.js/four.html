@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body style="background-color: #223222; color: #ffff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+    <script>
+        function addLanguage(langName){
+            const li = document.createElement('li');
+            li.innerHTML =  langName;
+            document.querySelector('.language').appendChild(li)
+        }
+        addLanguage("jasmit")
+        addLanguage("helloo")
+
+        // in this code use appendchild(create a text node ) 
+        //it easy to add element && in InnerHTML(no need to make a text node )  
+
+        function addOptiLanguage(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li)
+        }
+
+        addOptiLanguage('aqwwdee')
+        addOptiLanguage("addidas")
+
+        // EDITs 
+
+        // in this code use textContext and repalceWith && but innerHYML is better 
+
+        const secondlang = document.querySelector("li:nth-child(2)")
+        // secondlang.innerHTML ="hiii"
+        const newli = document.createElement('li')
+        newli.textContent = "hiii"
+        secondlang.replaceWith(newli)
+
+        //  edits2
+
+        const firstlang = document.querySelector("li:first-child")
+        firstlang.innerHTML ="<li>0986</li"
+
+
+        // remove
+
+        
+
+
+
+    </script>
+</html>
